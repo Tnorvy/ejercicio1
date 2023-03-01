@@ -11,7 +11,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Convertidor peso</title>
@@ -22,8 +22,7 @@
             <h1><br>Convertidor de peso en diferentes planetas</h1>
         </div>
         <div class="container">
-            <p>Este programa te ayuda a saber cual es tu peso en otro planeta. 
-            Sabemos que el peso en la tierra es 9.81m/s^2</p>
+            <p>Este programa te ayuda a saber cual es tu peso en cualquiera de los planetas del sistemas solar</p>
         </div>
         <div class="container">
             <form action="SvCalculo" method="POST">
@@ -40,7 +39,7 @@
                     <input type="radio" name="7">Urano<br>
                     <input type="radio" name="8">Neptuno<br>
                 </div>
-                <button type="submit" class="b1"> Enviar </button></form>
+                <button type="submit" class="b1"> Calcular </button></form>
             </form>
         </div>
     </body>
