@@ -14,7 +14,6 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<<<<<<< HEAD
          <title>Convertidor peso</title>
     </head>
     <body>
@@ -34,11 +33,6 @@
             <input type="radio" name="planet">Neptuno<br>
             <input type="submit" name="enviar">
         </form>
-=======
         <title>JSP Page</title>
     </head>
-    <body>
-        <h1>Hello World!</h1>
->>>>>>> 5d767509e6e1449b6efe17ae8b1391a4ca2939e3
-    </body>
 </html>
