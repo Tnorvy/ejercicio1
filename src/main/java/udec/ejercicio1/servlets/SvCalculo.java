@@ -25,10 +25,39 @@ public class SvCalculo extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         int peso = Integer.parseInt(request.getParameter("peso"));
-        //int peso = request.getParameter("peso");
-        int planeta = Integer.parseInt(request.getParameter("1"));
-
-        System.out.println("El peso es " + peso * planeta);
+        String mercurio = request.getParameter("1");
+        if (mercurio.equals("on")){
+            System.out.println("El peso es " + peso * 3.7);
+        }
+        String venus = request.getParameter("2");
+        if (venus.equals("on")){
+            System.out.println("El peso es " + peso * 8.87);
+        }
+        String tierra = request.getParameter("3");
+        if (tierra.equals("on")){
+            System.out.println("El peso es " + peso * 9.81);
+        }
+        String marte = request.getParameter("4");
+        if (marte.equals("on")){
+            System.out.println("El peso es " + peso * 3.721);
+        }
+        String jupiter = request.getParameter("5");
+        if (jupiter.equals("on")){
+            System.out.println("El peso es " + peso * 24.79);
+        }
+        String saturno = request.getParameter("6");
+        if (saturno.equals("on")){
+            System.out.println("El peso es " + peso * 10.44);
+        }
+        String urano = request.getParameter("7");
+        if (urano.equals("on")){
+            System.out.println("El peso es " + peso * 8.87);
+        }
+        String neptuno = request.getParameter("7");
+        if (neptuno.equals("on")){
+            System.out.println("El peso es " + peso * 11.15);
+        }   
+            
     }
 
     @Override

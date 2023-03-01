@@ -32,13 +32,13 @@
                 <p id="titulo"><br>Escoja el planeta</p>
                 <div class="planet">
                     <input type="radio" name="1">Mercurio<br>
-                    <input type="radio" name=2>Venus<br>
-                    <input type="radio" name=3>Tierra<br>
-                    <input type="radio" name=4>Marte<br>
-                    <input type="radio" name=5>Jupiter<br>
-                    <input type="radio" name=6>Saturno<br>
-                    <input type="radio" name=7>Urano<br>
-                    <input type="radio" name=8>Neptuno<br>
+                    <input type="radio" name="2">Venus<br>
+                    <input type="radio" name="3">Tierra<br>
+                    <input type="radio" name="4">Marte<br>
+                    <input type="radio" name="5">Jupiter<br>
+                    <input type="radio" name="6">Saturno<br>
+                    <input type="radio" name="7">Urano<br>
+                    <input type="radio" name="8">Neptuno<br>
                 </div>
                 <button type="submit" class="b1"> Enviar </button></form>
             </form>
