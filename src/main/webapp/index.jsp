@@ -14,25 +14,34 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-         <title>Convertidor peso</title>
+        <title>Convertidor peso</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <h1>Convertidor de peso en diferentes planetas</h1>
-        <p>Este programa te ayuda a saber cual es tu peso en otro planeta. 
-        Sabemos que el peso en la tierra </p>
-        <form action="return.jsp">
-            <p id="titulo">Peso en la tierra</p>
-            <input type="number" name="peso"><br>
-            <input type="radio" name="planet">Mercurio<br>
-            <input type="radio" name="planet">Venuz<br>
-            <input type="radio" name="planet">Tierra<br>
-            <input type="radio" name="planet">Marte<br>
-            <input type="radio" name="planet">Jupiter<br>
-            <input type="radio" name="planet">Saturno<br>
-            <input type="radio" name="planet">Urano<br>
-            <input type="radio" name="planet">Neptuno<br>
-            <input type="submit" name="enviar">
-        </form>
-        <title>JSP Page</title>
-    </head>
+        <div class="container">
+            <h1><br>Convertidor de peso en diferentes planetas</h1>
+        </div>
+        <div class="container">
+            <p>Este programa te ayuda a saber cual es tu peso en otro planeta. 
+            Sabemos que el peso en la tierra es 9.81m/s^2</p>
+        </div>
+        <div class="container">
+            <form action="Return">
+                <p id="titulo"><br>Peso en la tierra</p>
+                <input type="number" name="peso"><br>
+                <p id="titulo"><br>Escoja el planeta</p>
+                <div class="planet">
+                    <input type="radio" name="planet">Mercurio<br>
+                    <input type="radio" name="planet">Venuz<br>
+                    <input type="radio" name="planet">Tierra<br>
+                    <input type="radio" name="planet">Marte<br>
+                    <input type="radio" name="planet">Jupiter<br>
+                    <input type="radio" name="planet">Saturno<br>
+                    <input type="radio" name="planet">Urano<br>
+                    <input type="radio" name="planet">Neptuno<br>
+                </div>
+                <form action="SvPacientes" method="post"><button type="submit" class="b1"> Enviar </button></form>
+            </form>
+        </div>
+    </body>
 </html>
