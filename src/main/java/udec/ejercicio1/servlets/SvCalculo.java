@@ -18,13 +18,17 @@ public class SvCalculo extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+        int peso = Integer.parseInt(request.getParameter("peso"));
+        //int peso = request.getParameter("peso");
+        int planeta = Integer.parseInt(request.getParameter("1"));
+
+        System.out.println("El peso es " + peso * planeta);
     }
 
     @Override

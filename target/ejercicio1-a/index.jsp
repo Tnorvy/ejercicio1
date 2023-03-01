@@ -26,21 +26,21 @@
             Sabemos que el peso en la tierra es 9.81m/s^2</p>
         </div>
         <div class="container">
-            <form action="Return">
-                <p id="titulo"><br>Peso en la tierra</p>
+            <form action="SvCalculo" method="POST">
+                <p id="titulo"><br>Masa en kilogramos:</p>
                 <input type="number" name="peso"><br>
                 <p id="titulo"><br>Escoja el planeta</p>
                 <div class="planet">
-                    <input type="radio" name="planet">Mercurio<br>
-                    <input type="radio" name="planet">Venuz<br>
-                    <input type="radio" name="planet">Tierra<br>
-                    <input type="radio" name="planet">Marte<br>
-                    <input type="radio" name="planet">Jupiter<br>
-                    <input type="radio" name="planet">Saturno<br>
-                    <input type="radio" name="planet">Urano<br>
-                    <input type="radio" name="planet">Neptuno<br>
+                    <input type="radio" name="1">Mercurio<br>
+                    <input type="radio" name=2>Venus<br>
+                    <input type="radio" name=3>Tierra<br>
+                    <input type="radio" name=4>Marte<br>
+                    <input type="radio" name=5>Jupiter<br>
+                    <input type="radio" name=6>Saturno<br>
+                    <input type="radio" name=7>Urano<br>
+                    <input type="radio" name=8>Neptuno<br>
                 </div>
-                <form action="SvPacientes" method="post"><button type="submit" class="b1"> Enviar </button></form>
+                <button type="submit" class="b1"> Enviar </button></form>
             </form>
         </div>
     </body>
