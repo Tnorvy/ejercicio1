@@ -1,18 +1,28 @@
-h1 {
+.title {
     font-size: 46px;
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(270deg, #19ff21, #107c3d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+h2 {
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(270deg, #2326c0, #23a7ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 p {
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Roboto', sans-serif;
 }
+
 .planet {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
+
 .container {
     display: flex;
     align-items: center;
@@ -35,6 +45,7 @@ p {
     border-radius: 6px;
     position: relative;
 }
+
 .b1::before {
     position: absolute;
     content: "";
@@ -44,14 +55,17 @@ p {
     z-index: -1;
     border-radius: 50%;
 }
+
 .b1:hover {
     color: white;
 }
+
 .b1:before {
     top: 100%;
     left: 100%;
     transition: .3s all;
 }
+
 .b1:hover::before {
     top: -30px;
     left: -30px;

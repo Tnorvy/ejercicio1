@@ -9,11 +9,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet(name = "SvCalculo", urlPatterns = {"/SvCalculo"})
+@WebServlet(name = "SvCalculo", urlPatterns = { "/SvCalculo" })
 public class SvCalculo extends HttpServlet {
-    
-    private double calculo = 0;
-    private String planeta = "a";
+
+    public double calculo = 0;
+    public String planeta = "a";
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -28,52 +28,49 @@ public class SvCalculo extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int peso = Integer.parseInt(request.getParameter("peso"));
-        String mercurio = request.getParameter("1");
-        if (mercurio.equals("on")){
-            calculo = peso * 3.7;
-            planeta = "mercurio";
+        double peso = Double.parseDouble(request.getParameter("peso"));
+        String opcion = request.getParameter("planeta");
+        switch (opcion) {
+            case "1":
+                calculo = peso * 9.81 / 3.7;
+                planeta = "mercurio";
+                break;
+            case "2":
+                calculo = peso * 9.81 / 8.87;
+                planeta = "venus";
+                break;
+            case "3":
+                calculo = peso * 9.81 / 9.81;
+                planeta = "tierra";
+                break;
+            case "4":
+                calculo = peso * 9.81 / 3.721;
+                planeta = "marte";
+                break;
+            case "5":
+                calculo = peso * 9.81 / 24.79;
+                planeta = "jupiter";
+                break;
+            case "6":
+                calculo = peso * 9.81 / 10.44;
+                planeta = "saturno";
+                break;
+            case "7":
+                calculo = peso *  9.81 / 8.87;
+                planeta = "urano";
+                break;
+            case "8":
+                calculo = peso *  9.81 / 11.15;
+                planeta = "neptuno";
+                break;
         }
-        String venus = request.getParameter("2");
-        if (venus.equals("on")){
-            calculo = peso * 8.87;
-            planeta = "venus";
-        }
-        String tierra = request.getParameter("3");
-        if (tierra.equals("on")){
-            calculo = peso * 9.81;
-            planeta = "tierra";
-        }
-        String marte = request.getParameter("4");
-        if (marte.equals("on")){
-            calculo = peso * 3.721;
-            planeta = "marte";
-        }
-        String jupiter = request.getParameter("5");
-        if (jupiter.equals("on")){
-            calculo = peso * 24.79;
-            planeta = "jupiter";
-        }
-        String saturno = request.getParameter("6");
-        if (saturno.equals("on")){
-            calculo = peso * 10.44;
-            planeta = "saturno";
-        }
-        String urano = request.getParameter("7");
-        if (urano.equals("on")){
-            calculo = peso * 8.87;
-            planeta = "urano";
-        }
-        String neptuno = request.getParameter("7");
-        if (neptuno.equals("on")){
-            calculo = peso * 11.15;
-            planeta = "neptuno";
-        }
-        
-        HttpSession misesion = request.getSession();
-        misesion.setAttribute("total", calculo);
-        misesion.setAttribute("planeta", planeta);
-        response.sendRedirect("verPeso.jsp");
+
+        calculo = Math.round(calculo * 100) / 100;
+        planeta = planeta.toUpperCase();
+
+        request.setAttribute("calculo", calculo);
+        request.setAttribute("planeta", planeta);
+        response.sendRedirect("verPeso.jsp?calculo=" + calculo + "&planeta=" + planeta);
     }
 
     @Override

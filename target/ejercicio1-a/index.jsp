@@ -19,7 +19,7 @@
     </head>
     <body>
         <div class="container">
-            <h1><br>Convertidor de peso en diferentes planetas</h1>
+            <h1 class="title"><br>Convertidor de peso en diferentes planetas</h1>
         </div>
         <div class="container">
             <p>Este programa te ayuda a saber cual es tu peso en cualquiera de los planetas del sistemas solar</p>
@@ -27,18 +27,19 @@
         <div class="container">
             <form action="SvCalculo" method="POST">
                 <p id="titulo"><br>Masa en kilogramos:</p>
-                <input type="number" name="peso"><br>
-                <p id="titulo"><br>Escoja el planeta</p>
+                <input type="number" name="peso" step="0.01"><br>
+                <p id="titulo"><br>Escoja el planeta
                 <div class="planet">
-                    <input type="radio" name="1">Mercurio<br>
-                    <input type="radio" name="2">Venus<br>
-                    <input type="radio" name="3">Tierra<br>
-                    <input type="radio" name="4">Marte<br>
-                    <input type="radio" name="5">Jupiter<br>
-                    <input type="radio" name="6">Saturno<br>
-                    <input type="radio" name="7">Urano<br>
-                    <input type="radio" name="8">Neptuno<br>
+                    <input type="radio" name="planeta" value="1" required>Mercurio<br>
+                    <input type="radio" name="planeta" value="2" required>Venus<br>
+                    <input type="radio" name="planeta" value="3" required>Tierra<br>
+                    <input type="radio" name="planeta" value="4" required>Marte<br>
+                    <input type="radio" name="planeta" value="5" required>Jupiter<br>
+                    <input type="radio" name="planeta" value="6" required>Saturno<br>
+                    <input type="radio" name="planeta" value="7" required>Urano<br>
+                    <input type="radio" name="planeta" value="8" required>Neptuno<br>
                 </div>
+                </p>
                 <button type="submit" class="b1"> Calcular </button></form>
             </form>
         </div>
