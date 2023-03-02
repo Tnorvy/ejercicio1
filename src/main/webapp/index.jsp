@@ -28,7 +28,7 @@
             <form action="SvCalculo" method="POST">
                 <div id="table">
                     <p id="titulo"><br>Masa en kilogramos:</p>
-                    <input type="number" name="peso" step="0.01"><br>
+                    <input type="number" name="peso" step="0.01" placeholder="Ej. 55.61"><br>
                     <p id="titulo"><br>Escoja el planeta
                     <div class="planet">
                         <input type="radio" name="planeta" value="1" required>Mercurio<br>

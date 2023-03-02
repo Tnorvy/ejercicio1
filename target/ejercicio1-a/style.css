@@ -71,12 +71,12 @@ p {
     left: -30px;
 }
 #table{
-     align-items: center;
+    align-items: center;
     justify-content: center;
     text-align: center;
     font-size: 20px;
     font-weight: 500;
-    border: 2px solid #00008a;
+    border: 2px solid #0a8124;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10px;    
 }
