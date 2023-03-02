@@ -26,22 +26,24 @@
         </div>
         <div class="container">
             <form action="SvCalculo" method="POST">
-                <p id="titulo"><br>Masa en kilogramos:</p>
-                <input type="number" name="peso" step="0.01"><br>
-                <p id="titulo"><br>Escoja el planeta
-                <div class="planet">
-                    <input type="radio" name="planeta" value="1" required>Mercurio<br>
-                    <input type="radio" name="planeta" value="2" required>Venus<br>
-                    <input type="radio" name="planeta" value="3" required>Tierra<br>
-                    <input type="radio" name="planeta" value="4" required>Marte<br>
-                    <input type="radio" name="planeta" value="5" required>Jupiter<br>
-                    <input type="radio" name="planeta" value="6" required>Saturno<br>
-                    <input type="radio" name="planeta" value="7" required>Urano<br>
-                    <input type="radio" name="planeta" value="8" required>Neptuno<br>
-                </div>
-                </p>
-                <button type="submit" class="b1"> Calcular </button></form>
-            </form>
+                <div id="table">
+                    <p id="titulo"><br>Masa en kilogramos:</p>
+                    <input type="number" name="peso" step="0.01"><br>
+                    <p id="titulo"><br>Escoja el planeta
+                    <div class="planet">
+                        <input type="radio" name="planeta" value="1" required>Mercurio<br>
+                        <input type="radio" name="planeta" value="2" required>Venus<br>
+                        <input type="radio" name="planeta" value="3" required>Tierra<br>
+                        <input type="radio" name="planeta" value="4" required>Marte<br>
+                        <input type="radio" name="planeta" value="5" required>Jupiter<br>
+                        <input type="radio" name="planeta" value="6" required>Saturno<br>
+                        <input type="radio" name="planeta" value="7" required>Urano<br>
+                        <input type="radio" name="planeta" value="8" required>Neptuno<br>
+                    </div>
+                    </p>
+                    <button type="submit" class="b1"> Calcular </button></form>
         </div>
-    </body>
+    </form>
+</div>
+</body>
 </html>
